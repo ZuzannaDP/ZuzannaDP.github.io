@@ -1,0 +1,22 @@
+.file > p {
+    margin: 0;
+    user-select: none;
+}
+
+.file > .hoverFileText {
+    color: var(--hover-text-color);
+}
+
+.file > .fileText {
+    color: var(--main-text-color);
+}
+
+.file {
+    padding: 10px;
+    text-align: center;
+    float: left;
+}
+
+.folder {
+    margin-right: 20px;
+}

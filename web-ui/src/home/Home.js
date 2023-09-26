@@ -1,11 +1,10 @@
+import NavBar from '../navigation/Navbar';
 import './Home.css';
 
 function Home() {
   return (
     <div className="Home">
-        <p>
-          Home
-        </p>
+        <NavBar />
     </div>
   );
 }
