@@ -9,8 +9,10 @@ function File(props) {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >
-          <img src={isHover ? props.hoverFileImage : props.fileImage}></img>
-          <p className={isHover ? "hoverFileText" : "fileText"} >{props.fileName}</p>
+          <img className={props.disabled ? "disabled" : "not-disabled"} 
+               src={isHover && !props.disabled ? props.hoverFileImage : props.fileImage}
+          ></img>
+          <p className={isHover || props.disabled ? "hoverFileText" : "fileText"} >{props.fileName}</p>
       </div>
     );
 }

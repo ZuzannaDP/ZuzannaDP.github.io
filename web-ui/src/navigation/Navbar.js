@@ -9,9 +9,9 @@ function Title() {
 function NavBar() {
     return (
         <div id="navbar">
-            <Folder fileName={"About me"} />
-            <Folder fileName={"Skills"} />
-            <Folder fileName={"Projects"} />
+            <Folder fileName={"About me"} disabled={false} />
+            <Folder fileName={"Skills"} disabled={true} />
+            <Folder fileName={"Projects"} disabled={false} />
         </div>
     );
 }
