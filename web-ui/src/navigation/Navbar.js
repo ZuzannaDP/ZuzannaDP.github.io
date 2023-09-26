@@ -1,5 +1,11 @@
 import Folder from "../files/Folder";
 
+function Title() {
+    return (
+        <p id="title">Zuzanna Poniatowska</p>
+    )
+}
+
 function NavBar() {
     return (
         <div id="navbar">
@@ -10,4 +16,13 @@ function NavBar() {
     );
 }
 
-export default NavBar;
+function Header() {
+    return (
+        <div id="header">
+            <Title />
+            <NavBar />
+        </div>
+    )
+}
+
+export default Header;
