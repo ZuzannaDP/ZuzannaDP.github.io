@@ -5,9 +5,11 @@
   --main-bg-color: #191A1C;
   --main-text-color: #f2f0e5;
   --hover-text-color: #f2f0e5a2;
+  --accent-color: #FFC4B8;
+  --accent2-color: #F69197;
   --main-font: 'Barlow Condensed';
   --secondary-font: 'VT323';
-  --header-font-size: 48px;
+  --header-font-size: 32px;
 }
 
 body {
@@ -17,6 +19,20 @@ body {
   font-family: var(--main-font);
 }
 
+.text-highlight {
+  color: var(--accent-color);
+}
+
+.text-header {
+  color: var(--accent2-color);
+  font-size: xx-large;
+}
+
+.main-content {
+  margin-top: 40px;
+}
+
+/* Navigation */
 #navbar {
   float: right;
 }
@@ -28,9 +44,38 @@ body {
 
 #header {
   margin-top: 20px;
+  overflow: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* About me */
+.about-me-windows {
+  position: relative;
+}
+
+.about-me-windows > .overlap {
+  position: absolute;
+  right: -50px;
+  background-color: var(--main-bg-color);
+}
+
+.about-me-windows > .overlap2 {
+  position: absolute;
+  top: 200px;
+  left: -50px;
+}
+
+.about-me-text {
+  max-width: 400px;
+}
+
+.about-me-text > p {
+  margin: 0;
+}
+
+.about-me-text > .text-highlight {
+  margin-bottom: 8px;
+}
+
+.about-me-text > .text-header {
+  margin-bottom: 8px;
 }

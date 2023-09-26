@@ -20,3 +20,25 @@
 .folder {
     margin-left: 20px;
 }
+
+.window {
+    position: relative;
+}
+
+.window > .content{
+    position: absolute;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.window-sides {
+    overflow: auto;
+}
+
+.window-left {
+    float: left;
+}
+
+.window-right {
+    float: right;
+}
