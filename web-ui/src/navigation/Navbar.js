@@ -1,4 +1,5 @@
 import Folder from "../files/Folder";
+import { Link } from 'react-router-dom';
 
 function Title() {
     return (
@@ -9,9 +10,13 @@ function Title() {
 function NavBar() {
     return (
         <div id="navbar">
-            <Folder fileName={"About me"} disabled={false} />
+            <Link to="/">
+                <Folder fileName={"About me"} disabled={false} />
+            </Link>
             <Folder fileName={"Skills"} disabled={true} />
-            <Folder fileName={"Projects"} disabled={false} />
+            <Link to="/projects">
+                <Folder fileName={"Projects"} disabled={false} />
+            </Link>
         </div>
     );
 }
