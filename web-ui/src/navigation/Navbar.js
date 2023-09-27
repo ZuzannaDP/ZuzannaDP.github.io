@@ -14,7 +14,7 @@ function NavBar() {
                 <Folder fileName={"About me"} disabled={false} />
             </Link>
             <Folder fileName={"Skills"} disabled={true} />
-            <Link to="/projects">
+            <Link to="/projects/">
                 <Folder fileName={"Projects"} disabled={false} />
             </Link>
         </div>

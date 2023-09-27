@@ -10,8 +10,9 @@ function Home() {
         <NavBar />
         <div className='main-content'>
           <Routes>
-            <Route exact path='/' element={<AboutMe />}></Route>
-            <Route exact path='/projects' element={<Projects />}></Route>
+            <Route path='/' element={<AboutMe />}></Route>
+            <Route path='/projects/:project' element={<Projects />}></Route>
+            <Route path='/projects/*' element={<Projects />}></Route>
           </Routes>
         </div>
     </BrowserRouter>

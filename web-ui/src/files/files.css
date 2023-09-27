@@ -1,6 +1,7 @@
 .file > p {
     margin: 0;
     user-select: none;
+    max-width: 100px;
 }
 
 .file > .hoverFileText {
@@ -15,10 +16,9 @@
     padding: 10px;
     text-align: center;
     float: left;
-}
-
-.folder {
-    margin-left: 20px;
+    width: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .window {

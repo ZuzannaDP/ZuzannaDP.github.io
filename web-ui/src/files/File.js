@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './files.css';
 
-function File(props) {
+export const IMAGE_FOLDER = process.env.PUBLIC_URL + "/images/";
+
+export function File(props) {
     const [isHover, setIsHover] = useState(false);
 
     return (
@@ -10,7 +12,7 @@ function File(props) {
         onMouseLeave={() => setIsHover(false)}
       >
           <img className={props.disabled ? "disabled" : "not-disabled"} 
-               src={isHover && !props.disabled ? props.hoverFileImage : props.fileImage}
+               src={IMAGE_FOLDER + (isHover && !props.disabled ? props.hoverFileImage : props.fileImage)}
           ></img>
           <p className={isHover || props.disabled ? "hoverFileText" : "fileText"} >{props.fileName}</p>
       </div>
