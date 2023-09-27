@@ -12,6 +12,10 @@
   --header-font-size: 32px;
 }
 
+p {
+  margin: 0;
+}
+
 body {
   margin: 0;
   background-color: var(--main-bg-color);

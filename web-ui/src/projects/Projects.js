@@ -2,6 +2,9 @@ import { Container } from "@mui/material";
 import { Grid } from "@mui/material";
 import File from "../files/File";
 import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom";
+import RatGame from "./RatGame"
+import FarmGame from "./FarmGame"
+import CardGame from "./CardGame"
 
 function ProjectFiles() {
     return (
@@ -21,6 +24,15 @@ function ProjectFiles() {
 
 function Projects() {
     const { project } = useParams();
+    let projectElement;
+
+    if (project == "ratGame") {
+        projectElement = <RatGame/>
+    } else if (project == "farmGame") {
+        projectElement = <FarmGame />
+    } else if (project == "cardGame") {
+        projectElement = <CardGame />
+    }
 
     return (
         <Container id="about-me">
@@ -29,6 +41,7 @@ function Projects() {
             direction="column"
             justifyContent="center"
             alignItems="center"
+            spacing={3}
             >
                 <Grid item>
                     <p>Projects</p>
@@ -39,9 +52,7 @@ function Projects() {
                 </Grid>
 
                 <Grid item>
-                    <Routes>
-
-                    </Routes>
+                    {projectElement}
                 </Grid>
             </Grid>
         </Container>

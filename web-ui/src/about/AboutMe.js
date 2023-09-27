@@ -37,6 +37,7 @@ function AboutMe() {
             direction="column"
             justifyContent="center"
             alignItems="center"
+            spacing={3}
             >
                 <Grid item>
                     <p>About Me</p>
