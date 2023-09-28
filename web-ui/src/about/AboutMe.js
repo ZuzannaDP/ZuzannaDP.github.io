@@ -22,7 +22,7 @@ function AboutMeWindows() {
                 }/>
             </div>
             <div className="overlap">
-                <Window height={3} width={5} content={
+                <Window isTextWindow={true} height={3} width={5} content={
                     <AboutMeText />
                 }/>
             </div>

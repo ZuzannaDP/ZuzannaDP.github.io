@@ -10,7 +10,7 @@ function Window(props) {
     let down = Array(props.width).fill(<img className="window-down" src={IMAGE_FOLDER + "Window_down.png"}></img>)
 
     return (
-        <div className="window">
+        <div className={"window" + (props.isTextWindow ? " text-window" : "")}>
             <div className="content">
                 {props.content}
             </div>

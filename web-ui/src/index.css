@@ -64,7 +64,6 @@ body {
 .about-me-windows > .overlap {
   position: absolute;
   right: -50px;
-  background-color: var(--accent-color);
   z-index: 2;
 }
 

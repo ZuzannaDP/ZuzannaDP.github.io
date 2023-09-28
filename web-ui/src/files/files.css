@@ -48,3 +48,7 @@
 .disabled {
     opacity: 0.5;
 }
+
+.text-window {
+    background-color: var(--accent-color);
+}
