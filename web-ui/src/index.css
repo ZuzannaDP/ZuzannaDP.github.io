@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=VT323&display=swap');
 
 :root {
-  --main-bg-color: #191A1C;
-  --main-text-color: #f2f0e5;
-  --hover-text-color: #f2f0e5a2;
-  --accent-color: #FFC4B8;
-  --accent2-color: #F69197;
+  --main-bg-color: #222323;
+  --main-text-color: #f0f6f0;
+  --disabled-text-color: #f0f6f08f;
+  --hover-text-color: #b0ea3f;
+  --accent-color: #f0f6f0;
   --main-font: verdana, 'Barlow Condensed';
   --secondary-font: 'VT323';
   --header-font-size: 32px;
@@ -24,12 +24,7 @@ body {
   font-size: small;
 }
 
-.text-highlight {
-  color: var(--accent-color);
-}
-
 .text-header {
-  color: var(--accent2-color);
   font-size: xx-large;
 }
 
@@ -60,7 +55,7 @@ body {
 .about-me-windows > .overlap {
   position: absolute;
   right: -50px;
-  background-color: var(--main-bg-color);
+  background-color: var(--accent-color);
 }
 
 .about-me-windows > .overlap2 {
@@ -75,6 +70,7 @@ body {
 
 .about-me-text > p {
   margin: 0;
+  color: var(--main-bg-color);
 }
 
 .about-me-text > .text-highlight {

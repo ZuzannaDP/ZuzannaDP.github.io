@@ -11,13 +11,13 @@ function ProjectFiles() {
     return (
         <div>
             <Link to="/projects/ratGame">
-                <File fileName="Ratventure in the pipes.exe" fileImage="RatPipeGame.png" hoverFileImage="RatPipeGame.png" />
+                <File fileName="Ratventure in the pipes.exe" fileImage="RatPipeGame.png" hoverFileImage="RatPipeGameHover.png" />
             </Link>
             <Link to="/projects/farmGame">
-                <File fileName="Farm game.exe" fileImage="FarmGame.png" hoverFileImage="FarmGame.png" />
+                <File fileName="Farm game.exe" fileImage="FarmGame.png" hoverFileImage="FarmGameHover.png" />
             </Link>
             <Link to="/projects/cardGame">
-                <File fileName="Card game.exe" fileImage="CardGame.png" hoverFileImage="CardGame.png" />
+                <File fileName="Card game.exe" fileImage="CardGame.png" hoverFileImage="CardGameHover.png" />
             </Link>
         </div>
     )
