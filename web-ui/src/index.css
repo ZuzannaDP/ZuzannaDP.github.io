@@ -7,7 +7,7 @@
   --hover-text-color: #f2f0e5a2;
   --accent-color: #FFC4B8;
   --accent2-color: #F69197;
-  --main-font: 'Barlow Condensed';
+  --main-font: verdana, 'Barlow Condensed';
   --secondary-font: 'VT323';
   --header-font-size: 32px;
 }
@@ -21,6 +21,7 @@ body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   font-family: var(--main-font);
+  font-size: small;
 }
 
 .text-highlight {

@@ -1,0 +1,29 @@
+This is V0.1 of the isometric, pixel art puzzle game: 'A Ratventure in the Pipes!' The game features a rat which the player can control and movable pipes which the rat can go through. The aim is to arrange the pipes such that the rat can go from the starting position to the end position.  
+The current version lacks polish, but contains the basic game mechanics which can be built upon and further explored. This was created in 3 and a half days as a challenge to try and create as much of a game as possible within a short period of time.
+
+Features:
+- The player can move a rat through the pipes.
+	- The rat can move forward, back, jump up a layer and fall down a layer.
+- The player can rotate the rat.
+- The player can move pipes within the grid.
+	- A pipe that the rat is currently in cannot be moved.
+	- A pipe must connect to another pipe in at least one of it's exits in the new position.
+	- When holding a pipe, the position in the grid the player is currently hovering over highlights.
+- The player can rotate a pipe in any axis.
+- When hovering over a pipe, it highlights.
+- The starting and ending positions are shown with a short distinct pipe piece.
+- There is a main menu.
+- There is a level selection menu.
+- There is a won level menu.
+
+Controls:
+keyboard
+- w - move rat forward
+- s - move rat backward
+- a - turn rat left
+- d - turn rat right
+- \[space\] - make rat jump up a layer
+- \[shift\] - make rat fall down a layer
+- r - change pipe rotation axis
+- \[ - rotate clockwise
+- \] - rotate anti-clockwise

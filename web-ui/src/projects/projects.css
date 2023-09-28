@@ -1,0 +1,5 @@
+.release-notes {
+    border-radius: 5px;
+    border: solid 1px var(--main-text-color);
+    padding: 20px;
+}

@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom"
 import RatGame from "./RatGame"
 import FarmGame from "./FarmGame"
 import CardGame from "./CardGame"
+import './projects.css';
 
 function ProjectFiles() {
     return (
