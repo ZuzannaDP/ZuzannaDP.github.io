@@ -10,9 +10,13 @@ function Window(props) {
     let down = Array(props.width).fill(<img className="window-down" src={IMAGE_FOLDER + "Window_down.png"}></img>)
 
     return (
-        <div className={"window" + (props.isTextWindow ? " text-window" : "")}>
-            <div className="content">
-                {props.content}
+        <div style={{width: props.width * 64 + 128}} 
+             className={"window" + (props.isTextWindow ? " text-window" : "")}>
+            <div style={{width: props.width * 64 + 128}} 
+                 className="content-wrapper">
+                <div className="content">
+                    {props.content}
+                </div>
             </div>
             <div className="border">
                 <div style={{height: 64}}>

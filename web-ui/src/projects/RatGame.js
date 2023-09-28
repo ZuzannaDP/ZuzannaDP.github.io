@@ -3,6 +3,8 @@ import { getDescription, getName, getReleaseNotes } from "./Helper";
 import Markdown from 'react-markdown'
 import { Container, Grid } from "@mui/material";
 import { ReleaseNotes } from "./Sections";
+import Window from "../files/Window";
+import { IMAGE_FOLDER } from "../files/File";
 
 function RatGame() {
     const [name, setName] = useState("");
@@ -23,29 +25,31 @@ function RatGame() {
 
     return (
         <Container maxWidth="md">
-            <Grid
+            <Window isTextWindow={true} height={12} width={8} content={
+                <Grid
                 container
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
                 spacing={2}
             >
-                <Grid item>
-                    <p>{name}</p>
-                </Grid>
+                    <Grid item>
+                        <img src={IMAGE_FOLDER + "RatGameTitle.png"}></img>
+                    </Grid>
 
-                <Grid item>
-                    <p>{desc}</p>
-                </Grid>
+                    <Grid item>
+                        <p>{desc}</p>
+                    </Grid>
 
-                <Grid item>
-                    <p>Release Notes</p>
-                </Grid>
+                    <Grid item>
+                        <p>Release Notes</p>
+                    </Grid>
 
-                <Grid item>
-                    <ReleaseNotes title="V0.1 - 19/09/23" notes={notes} />
+                    <Grid item>
+                        <ReleaseNotes title="V0.1 - 19/09/23" notes={notes} />
+                    </Grid>
                 </Grid>
-            </Grid>
+            }/>
         </Container>
     )
 }

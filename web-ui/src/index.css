@@ -79,7 +79,6 @@ body {
 
 .about-me-text > p {
   margin: 0;
-  color: var(--main-bg-color);
 }
 
 .about-me-text > .text-highlight {
@@ -90,7 +89,7 @@ body {
   margin-bottom: 8px;
 }
 
-.overlap2 > .window > .content{
+.overlap2 > .window > .content-wrapper > .content{
   padding: 0;
 }
 

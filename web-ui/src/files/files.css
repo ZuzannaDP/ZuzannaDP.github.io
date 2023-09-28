@@ -22,8 +22,11 @@
     margin-right: 5px;
 }
 
-.window > .content{
+.window > .content-wrapper{
     position: absolute;
+}
+
+.window > .content-wrapper > .content {
     padding: 20px;
     padding-top: 40px;
 }
@@ -51,4 +54,5 @@
 
 .text-window {
     background-color: var(--accent-color);
+    color: var(--main-bg-color);
 }
