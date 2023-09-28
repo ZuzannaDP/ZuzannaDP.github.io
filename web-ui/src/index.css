@@ -42,6 +42,15 @@ body {
   margin-top: 20px;
 }
 
+#title > img {
+  float: left;
+}
+
+#title > div {
+  margin-left: 20px;
+  float: left;
+}
+
 #header {
   margin-top: 20px;
   overflow: auto;

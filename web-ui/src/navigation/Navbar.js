@@ -1,9 +1,19 @@
+import { IMAGE_FOLDER } from "../files/File";
 import Folder from "../files/Folder";
 import { Link } from 'react-router-dom';
 
 function Title() {
+    var now = new Date();
+    var datetime = now.toLocaleTimeString()
+
     return (
-        <p id="title">Zuzanna Poniatowska</p>
+        <div id="title">
+            <img src={IMAGE_FOLDER + "House.png"}></img>
+            <div>
+                <p>Zuzanna's Home</p>
+                <p>{datetime}</p>
+            </div>
+        </div>
     )
 }
 
