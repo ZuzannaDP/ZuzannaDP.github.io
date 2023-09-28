@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import { Grid } from "@mui/material";
 import Window from "../files/Window";
+import { IMAGE_FOLDER } from "../files/File";
 
 function AboutMeText() {
     return (
@@ -17,7 +18,7 @@ function AboutMeWindows() {
         <div className="about-me-windows">
             <div className="overlap2">
                 <Window height={3} width={5} content={
-                    <AboutMeText />
+                    <img style={{width:"450px"}} src={IMAGE_FOLDER + "TestAboutMe.jpg"}></img>
                 }/>
             </div>
             <div className="overlap">

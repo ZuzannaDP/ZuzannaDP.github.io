@@ -65,6 +65,7 @@ body {
   position: absolute;
   right: -50px;
   background-color: var(--accent-color);
+  z-index: 2;
 }
 
 .about-me-windows > .overlap2 {
@@ -88,4 +89,12 @@ body {
 
 .about-me-text > .text-header {
   margin-bottom: 8px;
+}
+
+.overlap2 > .window > .content{
+  padding: 0;
+}
+
+.overlap2 {
+  overflow: hidden;
 }
