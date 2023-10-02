@@ -33,6 +33,11 @@
     padding: 0;
 }
 
+.image-window {
+    position: relative;
+    overflow: hidden;
+  }
+
 .window > .border {
     position: relative;
     z-index: 1;

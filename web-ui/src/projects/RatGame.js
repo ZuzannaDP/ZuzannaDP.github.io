@@ -5,6 +5,7 @@ import { Container, Grid } from "@mui/material";
 import { ReleaseNotes } from "./Sections";
 import Window from "../files/Window";
 import { IMAGE_FOLDER } from "../files/File";
+import { Project } from "./Projects";
 
 function RatGame() {
     const [name, setName] = useState("");
@@ -24,33 +25,27 @@ function RatGame() {
     })
 
     return (
-        <Container maxWidth="md">
-            <Window isTextWindow={true} height={12} width={8} content={
-                <Grid
-                container
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-                spacing={2}
-            >
-                    <Grid item>
-                        <img src={IMAGE_FOLDER + "RatGameTitle.png"}></img>
-                    </Grid>
-
-                    <Grid item>
-                        <p>{desc}</p>
-                    </Grid>
-
-                    <Grid item>
-                        <p>Release Notes</p>
-                    </Grid>
-
-                    <Grid item>
-                        <ReleaseNotes title="V0.1 - 19/09/23" notes={notes} />
-                    </Grid>
+        <Project titleImage="ratGameTitle.png" content={
+            <Grid
+            container
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+        >
+                <Grid item>
+                    <p>{desc}</p>
                 </Grid>
-            }/>
-        </Container>
+
+                <Grid item>
+                    <p>Release Notes</p>
+                </Grid>
+
+                <Grid item>
+                    <ReleaseNotes title="V0.1 - 19/09/23" notes={notes} />
+                </Grid>
+            </Grid>
+        } />
     )
 }
 

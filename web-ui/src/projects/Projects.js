@@ -1,11 +1,12 @@
 import { Container } from "@mui/material";
 import { Grid } from "@mui/material";
-import File from "../files/File";
+import File, { IMAGE_FOLDER } from "../files/File";
 import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom";
 import RatGame from "./RatGame"
 import FarmGame from "./FarmGame"
 import CardGame from "./CardGame"
 import './projects.css';
+import Window from "../files/Window";
 
 function ProjectFiles() {
     return (
@@ -20,6 +21,45 @@ function ProjectFiles() {
                 <File fileName="Card game.exe" fileImage="CardGame.png" hoverFileImage="CardGameHover.png" />
             </Link>
         </div>
+    )
+}
+
+export function Project(props) {
+    return (
+        <Container maxWidth="md">
+            <Window isTextWindow={true} height={12} width={8} content={
+                <Grid
+                    container
+                    direction="column"
+                    justifyContent="center"
+                    alignItems="stretch"
+                    spacing={2}
+                >
+                    <Grid item 
+                        container
+                        justifyContent="space-between"
+                        alignItems="flex-start"
+                        direction="row"
+                    >
+                        <Grid item>
+                            <img src={IMAGE_FOLDER + "github-mark.png"} className="gitmark" style={{opacity:"0"}}></img>
+                        </Grid>
+                        <Grid item>
+                            <img src={IMAGE_FOLDER + props.titleImage}></img>
+                        </Grid>
+                        <Grid item sx={{zIndex:"5"}}>
+                            <a href="https://github.com/ZuzannaDP/RatPipeGame">
+                                <img src={IMAGE_FOLDER + "github-mark.png"} className="gitmark"></img>
+                            </a>
+                        </Grid>
+                    </Grid>
+
+                    <Grid item>
+                        {props.content}
+                    </Grid>
+                </Grid>
+            }/>
+        </Container>
     )
 }
 

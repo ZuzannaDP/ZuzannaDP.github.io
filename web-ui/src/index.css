@@ -64,11 +64,6 @@ body {
   z-index: 2;
 }
 
-.image-window {
-  position: relative;
-  overflow: hidden !important;
-}
-
 .about-me-text {
   max-width: 400px;
 }

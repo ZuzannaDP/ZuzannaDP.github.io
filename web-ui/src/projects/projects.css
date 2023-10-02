@@ -3,3 +3,9 @@
     border: solid 1px var(--main-text-color);
     padding: 20px;
 }
+
+.gitmark {
+    width: 25px;
+    float: right;
+    z-index: 5;
+}
