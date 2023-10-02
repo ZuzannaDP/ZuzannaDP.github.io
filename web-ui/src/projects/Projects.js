@@ -27,7 +27,7 @@ function ProjectFiles() {
 export function Project(props) {
     return (
         <Container maxWidth="md">
-            <Window isTextWindow={true} height={12} width={8} content={
+            <Window isTextWindow={true} height={props.height} width={8} content={
                 <Grid
                     container
                     direction="column"
@@ -48,7 +48,7 @@ export function Project(props) {
                             <img src={IMAGE_FOLDER + props.titleImage}></img>
                         </Grid>
                         <Grid item sx={{zIndex:"5"}}>
-                            <a href="https://github.com/ZuzannaDP/RatPipeGame">
+                            <a href={props.githubLink}>
                                 <img src={IMAGE_FOLDER + "github-mark.png"} className="gitmark"></img>
                             </a>
                         </Grid>

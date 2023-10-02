@@ -25,7 +25,10 @@ function RatGame() {
     })
 
     return (
-        <Project titleImage="ratGameTitle.png" content={
+        <Project titleImage="ratGameTitle.png" 
+                 githubLink="https://github.com/ZuzannaDP/RatPipeGame"
+                 height={5}
+                 content={
             <Grid
             container
             direction="column"
@@ -33,17 +36,40 @@ function RatGame() {
             alignItems="center"
             spacing={2}
         >
-                <Grid item>
-                    <p>{desc}</p>
+                <Grid item container direction="column" alignItems="center">
+                    <a className="higher" href="https://zuzannadp.itch.io/ratventure-in-the-pipes">
+                        <img src={IMAGE_FOLDER + "Play.png"}></img>
+                    </a>
+                    <p className="higher low-vis">Pasword is 'rat-moon-fruit!'</p>
                 </Grid>
 
                 <Grid item>
+                    <p>Puzzle, Adventure</p>
+                </Grid>
+
+                <Grid item>
+                    <p>Made in Unity</p>
+                </Grid>
+
+                <Grid item>
+                    <p><em>{desc}</em></p>
+                </Grid>
+
+                <Grid item container direction="column" alignItems="flex-start">
+                    <p>Features includes:</p>
+                    <ul>
+                        <li>Moving and rotating pipes.</li>
+                        <li>Controlling a rat character.</li>
+                    </ul>
+                </Grid>
+
+                {/* <Grid item>
                     <p>Release Notes</p>
                 </Grid>
 
                 <Grid item>
                     <ReleaseNotes title="V0.1 - 19/09/23" notes={notes} />
-                </Grid>
+                </Grid> */}
             </Grid>
         } />
     )
