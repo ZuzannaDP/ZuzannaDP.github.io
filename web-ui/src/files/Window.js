@@ -11,7 +11,7 @@ function Window(props) {
 
     return (
         <div style={{width: props.width * 64 + 128}} 
-             className={"window" + (props.isTextWindow ? " text-window" : "")}>
+             className={"window" + (props.isTextWindow ? " text-window" : " image-window")}>
             <div style={{width: props.width * 64 + 128}} 
                  className="content-wrapper">
                 <div className="content">

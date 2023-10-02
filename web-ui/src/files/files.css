@@ -22,13 +22,17 @@
     margin-right: 5px;
 }
 
-.window > .content-wrapper{
+.window > .content-wrapper {
     position: absolute;
 }
 
 .window > .content-wrapper > .content {
     padding: 20px;
     padding-top: 40px;
+}
+
+.image-window > .content-wrapper > .content {
+    padding: 0;
 }
 
 .window > .border {

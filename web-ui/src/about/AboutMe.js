@@ -13,18 +13,53 @@ function AboutMeText() {
     )
 }
 
-function AboutMeWindows() {
+function LeftWindow() {
     return (
-        <div className="about-me-windows">
-            <div className="overlap2">
+        <Grid
+            container
+            direction="row"
+            justifyContent="flex-start"
+            alignItems="center"
+            spacing={3}
+            sx={{width:"100%"}}
+        >
+            <Grid item>
+                <div className="overlap">
+                    <Window isTextWindow={true} height={3} width={5} content={
+                        <AboutMeText />
+                    }/>
+                </div>
+            </Grid>
+        </Grid>
+    )
+}
+
+function RightWindow() {
+    return (
+        <Grid
+            container
+            direction="row"
+            justifyContent="flex-end"
+            alignItems="center"
+            spacing={3}
+            sx={{width:"100%"}}
+        >
+
+            <Grid item>
                 <Window height={3} width={5} content={
                     <img style={{width:"450px"}} src={IMAGE_FOLDER + "TestAboutMe.jpg"}></img>
                 }/>
-            </div>
-            <div className="overlap">
-                <Window isTextWindow={true} height={3} width={5} content={
-                    <AboutMeText />
-                }/>
+            </Grid>
+        </Grid>
+    )
+}
+
+function AboutMeWindows() {
+    return (
+        <div className="about-me-windows">
+                <LeftWindow />
+            <div style={{bottom:"100px", position:"relative"}}>
+                <RightWindow />
             </div>
         </div>
     )
@@ -32,20 +67,29 @@ function AboutMeWindows() {
 
 function AboutMe() {
     return (
-        <Container id="about-me">
+        <Container maxWidth="lg" id="about-me">
             <Grid
             container
             direction="column"
             justifyContent="center"
-            alignItems="center"
+            alignItems="stretch"
             spacing={3}
             >
-                <Grid item>
-                    <p>About Me</p>
+                <Grid item container justifyContent="center">
+                    <div >
+                        <p>About Me</p>
+                    </div>
                 </Grid>
 
                 <Grid item>
-                    <AboutMeWindows />
+                    <Grid 
+                        container
+                        justifyContent="center"
+                        alignItems="center"
+                        direction="row"
+                    >
+                        <AboutMeWindows />
+                    </Grid>
                 </Grid>
             </Grid>
         </Container>

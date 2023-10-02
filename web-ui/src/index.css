@@ -58,19 +58,19 @@ body {
 
 /* About me */
 .about-me-windows {
-  position: relative;
+  min-width: 500px;
+  max-width: 800px;
+  width: 100% !important;
 }
 
-.about-me-windows > .overlap {
-  position: absolute;
-  right: -50px;
+.overlap {
+  position: relative;
   z-index: 2;
 }
 
-.about-me-windows > .overlap2 {
-  position: absolute;
-  top: 200px;
-  left: -50px;
+.image-window {
+  position: relative;
+  overflow: hidden !important;
 }
 
 .about-me-text {
@@ -87,12 +87,4 @@ body {
 
 .about-me-text > .text-header {
   margin-bottom: 8px;
-}
-
-.overlap2 > .window > .content-wrapper > .content{
-  padding: 0;
-}
-
-.overlap2 {
-  overflow: hidden;
 }
