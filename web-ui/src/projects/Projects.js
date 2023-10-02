@@ -52,7 +52,8 @@ function Projects() {
                     <ProjectFiles />
                 </Grid>
 
-                <Grid item>
+                <Grid item
+                    sx={{marginBottom:"75px"}}>
                     {projectElement}
                 </Grid>
             </Grid>
