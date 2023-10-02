@@ -84,3 +84,13 @@ body {
 .about-me-text > .text-header {
   margin-bottom: 8px;
 }
+
+footer {
+  padding-bottom: 25px;
+  color: var(--disabled-text-color);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
