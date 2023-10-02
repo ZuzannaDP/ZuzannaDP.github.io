@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material";
 import { IMAGE_FOLDER } from "../files/File";
 import Folder from "../files/Folder";
 import { Link } from 'react-router-dom';
@@ -19,23 +20,48 @@ function Title() {
 
 function NavBar() {
     return (
-        <div id="navbar">
-            <Link to="/">
-                <Folder fileName={"About me"} disabled={false} />
-            </Link>
-            <Folder fileName={"Skills"} disabled={true} />
-            <Link to="/projects/">
-                <Folder fileName={"Projects"} disabled={false} />
-            </Link>
-        </div>
+        <Grid 
+            container
+            direction="row"
+            alignItems="center"
+            justifyContent="flex-end"
+        >
+            <Grid item>
+                <Link to="/">
+                    <Folder fileName={"About me"} disabled={false} />
+                </Link>
+            </Grid>
+            
+            <Grid item>
+                <Folder fileName={"Skills"} disabled={true} />
+            </Grid>
+
+            <Grid item>
+                <Link to="/projects/">
+                    <Folder fileName={"Projects"} disabled={false} />
+                </Link>
+            </Grid>
+        </Grid>
     );
 }
 
 function Header() {
     return (
         <div id="header">
-            <Title />
-            <NavBar />
+            <Grid 
+                container
+                direction="row"
+                alignItems="stretch"
+                justifyContent="space-between"
+            >
+                <Grid item>
+                    <Title />
+                </Grid>
+
+                <Grid item>
+                    <NavBar />
+                </Grid>
+            </Grid>
         </div>
     )
 }
