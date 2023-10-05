@@ -25,7 +25,7 @@ function RatGame() {
     })
 
     return (
-        <Project titleImage="ratGameTitle.png" 
+        <Project titleImage="RatGameTitle.png" 
                  githubLink="https://github.com/ZuzannaDP/RatPipeGame"
                  height={5}
                  content={

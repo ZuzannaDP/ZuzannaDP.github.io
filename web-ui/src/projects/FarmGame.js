@@ -4,7 +4,7 @@ import { IMAGE_FOLDER } from "../files/File";
 
 function FarmGame() {
     return (
-        <Project titleImage="ratGameTitle.png" 
+        <Project titleImage="FarmGameTitle.png" 
                  githubLink="https://github.com/ZuzannaDP/2DGamePrototype"
                  height={9}
                  content={

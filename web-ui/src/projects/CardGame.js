@@ -3,7 +3,7 @@ import { Project } from "./Projects";
 
 function CardGame() {
     return (
-        <Project titleImage="ratGameTitle.png" 
+        <Project titleImage="CardGameTitle.png" 
                  githubLink="https://github.com/ZuzannaDP/CardGame"
                  height={4}
                  content={

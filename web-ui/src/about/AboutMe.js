@@ -8,7 +8,7 @@ function AboutMeText() {
         <div className="about-me-text">
             <p className="text-highlight">Hi, I’m Zuzanna Poniatowska,</p>
             <p className="text-header">a Computer Science Student!</p>
-            <p>I’m in my final year at the university of St Andrews and looking to enter the industry in a software developer role. I enjoy both front and back end work; but especially have a passion in game design! In my spare time I like to work on personal game projects which can be viewed in the projects section. The combination of creative and problem solving work involved in developing a game is what excites me and makes me want to enter this field!</p>
+            <p>I’m in my final year at the university of St Andrews and looking to enter the industry in a software developer role. I enjoy both front and back end work; but especially have a passion in game design! In my spare time I like to work on personal game projects which can be viewed in the <em>projects section</em>. I also have a love for pixel art, and other forms of digital art, so I created all imagery for the website myself.</p>
         </div>
     )
 }
