@@ -4,7 +4,7 @@ import File, { IMAGE_FOLDER } from "../files/File";
 import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom";
 import RatGame from "./RatGame"
 import FarmGame from "./FarmGame"
-import CardGame from "./CardGame"
+import DungeonGenerator from "./DungeonGenerator"
 import './projects.css';
 import Window from "../files/Window";
 
@@ -18,7 +18,7 @@ function ProjectFiles() {
                 <File fileName="Farm game.exe" fileImage="FarmGame.png" hoverFileImage="FarmGameHover.png" />
             </Link>
             <Link to="/projects/cardGame">
-                <File fileName="Card game.exe" fileImage="CardGame.png" hoverFileImage="CardGameHover.png" />
+                <File fileName="Dungeon generator.exe" fileImage="DungeonGenerator.png" hoverFileImage="DungeonGeneratorHover.png" />
             </Link>
         </div>
     )
@@ -72,7 +72,7 @@ function Projects() {
     } else if (project == "farmGame") {
         projectElement = <FarmGame />
     } else if (project == "cardGame") {
-        projectElement = <CardGame />
+        projectElement = <DungeonGenerator />
     }
 
     return (
